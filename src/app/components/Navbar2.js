@@ -26,7 +26,7 @@ const Navbar2 = () => {
       >
         <MenuRoundedIcon />
       </Button>
-      <nav className="hidden lg:flex w-24 h-screen bg-gray-800 flex-col items-center py-8">
+      <nav className="hidden lg:flex w-20 h-screen bg-gray-800 flex-col items-center py-8">
         <ul className="flex flex-col gap-8 lg:gap-9">
           <Button color="inherit">
             <span className="material-symbols-rounded">home</span>
