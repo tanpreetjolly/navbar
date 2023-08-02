@@ -1,4 +1,5 @@
 "use client";
+import "material-symbols";
 import React, { useState, useEffect } from "react";
 import { Button } from "@mui/material";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
@@ -16,9 +17,6 @@ const Navbar2 = () => {
     setIsNavbarOpen(!isNavbarOpen);
   };
 
-
-
-
   return (
     <div className="relative">
       <Button
@@ -31,49 +29,42 @@ const Navbar2 = () => {
       <nav className="hidden lg:flex w-24 h-screen bg-gray-800 flex-col items-center py-8">
         <ul className="flex flex-col gap-8 lg:gap-9">
           <Button color="inherit">
-            <HomeRoundedIcon fontSize="large" />
+            <span className="material-symbols-rounded">home</span>
           </Button>
           <Button color="inherit">
-            <SchoolRoundedIcon fontSize="large"/>
+            <span className="material-symbols-rounded">school</span>
           </Button>
           <Button color="inherit">
-            <BarChartRoundedIcon fontSize="large" />
+            <span className="material-symbols-rounded">leaderboard</span>
           </Button>
           <Button color="inherit">
-            <NotificationsNoneOutlinedIcon
-              fontSize="large"
-            />
+            <span className="material-symbols-rounded">notifications</span>
           </Button>
           <Button color="inherit">
-            <PeopleRoundedIcon fontSize="large" />
+            <span className="material-symbols-rounded">groups</span>
           </Button>
         </ul>
       </nav>
       {isNavbarOpen && (
         <nav className="w-20 h-screen bg-gray-800 flex flex-col items-center py-8">
           <ul className="flex flex-col gap-8">
-            <Button
-              onClick={handleMenuToggle}
-              color="inherit"
-            >
-              <CancelRoundedIcon />
+            <Button onClick={handleMenuToggle} color="inherit">
+              <span className="material-symbols-rounded">cancel</span>
             </Button>
             <Button color="inherit">
-              <HomeRoundedIcon fontSize="medium" />
+              <span className="material-symbols-rounded">home</span>
             </Button>
             <Button color="inherit">
-              <SchoolRoundedIcon fontSize="medium" />
+              <span className="material-symbols-rounded">school</span>
             </Button>
             <Button color="inherit">
-              <BarChartRoundedIcon fontSize="medium" />
+              <span className="material-symbols-rounded">leaderboard</span>
             </Button>
             <Button color="inherit">
-              <NotificationsNoneOutlinedIcon
-                fontSize="medium"
-              />
+              <span className="material-symbols-rounded">notifications</span>
             </Button>
             <Button color="inherit">
-              <PeopleRoundedIcon fontSize="medium" />
+              <span className="material-symbols-rounded">groups</span>
             </Button>
           </ul>
         </nav>
